@@ -1,10 +1,12 @@
+import { Routes, Route } from "react-router-dom"
+
 import './App.css'
 
 const App = () => {
   return (
-    <div className="bg-amber-50">
-			Hello Pick-Sell !!
-    </div>
+    <Routes>
+      
+    </Routes>
   )
 }
 
