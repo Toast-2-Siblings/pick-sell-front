@@ -1,9 +1,9 @@
 import './App.css'
 
-function App() {
+const App = () => {
   return (
     <div className="bg-amber-50">
-			Hello Pick-Sell
+			Hello Pick-Sell !!
     </div>
   )
 }
