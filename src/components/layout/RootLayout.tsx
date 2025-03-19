@@ -6,9 +6,9 @@ const RootLayout = () => {
   return (
     <main className="flex min-h-screen flex-col">
       <Header />
-      <section className="container mx-auto flex-1">
+      <div className="container mx-auto flex-1">
         <Outlet />
-      </section>
+      </div>
     </main>
   )
 }
