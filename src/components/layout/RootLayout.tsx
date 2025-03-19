@@ -4,12 +4,12 @@ import { Header } from "@/components/layout/Header";
 
 const RootLayout = () => {
   return (
-    <div className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col">
       <Header />
-      <div className="container mx-auto flex-1">
+      <section className="container mx-auto flex-1">
         <Outlet />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 

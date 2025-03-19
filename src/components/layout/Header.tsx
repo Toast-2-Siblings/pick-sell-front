@@ -13,13 +13,13 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white">
-      <div className="container flex h-16 items-center justify-between mx-auto">
+    <header className="sticky top-0 z-50 w-full bg-white">
+      <div className="container flex h-12 items-center justify-between mx-auto">
         <Logo />
 
         {!isMobile && (
           <div className="flex items-center gap-4">
-            <Button variant="outline" className="">
+            <Button variant="outline" className="" tabIndex={0}>
               회원가입
             </Button>
           </div>
@@ -28,19 +28,19 @@ export function Header() {
         {isMobile && (
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" aria-label="메뉴 열기">
+              <Button variant="ghost" size="icon" aria-label="메뉴 열기" tabIndex={0}>
                 <Menu className="h-12 w-12" />
               </Button>
             </SheetTrigger>
             <SheetContent side="top" className="pt-12">
               <nav className="flex flex-col space-y-6">
-                <Link to="/category1" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
+                <Link to="/category1" className="text-lg font-medium" onClick={() => setIsOpen(false)} tabIndex={0}>
                   카테고리1
                 </Link>
-                <Link to="/category2" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
+                <Link to="/category2" className="text-lg font-medium" onClick={() => setIsOpen(false)} tabIndex={1}>
                   카테고리2
                 </Link>
-                <Link to="/category3" className="text-lg font-medium" onClick={() => setIsOpen(false)}>
+                <Link to="/category3" className="text-lg font-medium" onClick={() => setIsOpen(false)} tabIndex={2}>
                   카테고리3
                 </Link>
               </nav>
