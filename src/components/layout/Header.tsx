@@ -21,7 +21,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Link
               to="/signup"
-              className="inline-flex items-center justify-center p-2 border rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md hover:underline focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               tabIndex={0}
               aria-label="회원가입 페이지로 이동"
             >
